@@ -3,7 +3,7 @@
 
 TEST(BankTest, TestTransfer) {
     Bank bank(2, 1000);
-    bank.modifyAllBalances(500); // Зачислим на оба счета по 500 единиц
+    bank.modifyAllBalances(500); 
     bank.transfer(0, 1, 300);
     ASSERT_EQ(bank.getAccountBalance(0), 200);
     ASSERT_EQ(bank.getAccountBalance(1), 800);
