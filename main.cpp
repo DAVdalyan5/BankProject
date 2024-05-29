@@ -25,7 +25,7 @@ int main() {
 
     displayHelp();
 
-    std::cin.ignore(); // Ignore the newline left in the input buffer.
+    std::cin.ignore(); 
     while (true) {
         std::cout << "> ";
         std::getline(std::cin, input);
@@ -51,7 +51,7 @@ int main() {
                 iss >> amount;
                 bank.modifyAllBalances(amount);
             } else if (command == "setlimits") {
-                iss >> id >> id2 >> amount; // Here id2 is min_balance and amount is max_balance
+                iss >> id >> id2 >> amount; 
                 bank.setAccountLimits(id, id2, amount);
             } else {
                 std::cout << "Unknown command. Please try again.\n";
